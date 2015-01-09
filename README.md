@@ -1,6 +1,6 @@
 ##NodeJS Chat (MIT License)
 
-A node js chat app using web sockets (socket.io)
+A node js chat app using web sockets (socket.io). Thankyou to https://github.com/amirrajan/nodejs-chat
 
 ##Run Locally
 
@@ -84,36 +84,3 @@ Open the app (same as opening it in the browser):
 
 And your app should be up on Heroku.
 
-##Signing up, and deploying to Azure
-
-###Documentation
-
-From windowsazure.com, click Documentation, click Developer Center, click node.js, then click the Learn More button which will take you here:
-
-http://www.windowsazure.com/en-us/develop/nodejs/tutorials/create-a-website-(mac)/ (if you're on a Mac, looks like the link is contextual)
-
-Install the command line tools from here:
-
-http://www.windowsazure.com/en-us/downloads/#cmd-line-tools (on Windows, be sure to install the cross platform command line interface...not the powershell version)
-
-From the command line, first download your publish settings (this will redirect you to a website):
-
-    azure account download
-
-After the `.publishsettings` file is downloaded, you'll need to import it:
-
-    azure acount import %pathtofile%
-
-Next create the site, with a git backed repository:
-    
-    azure site create %uniquesitename% --git
-
-Deploy site:
-
-    git push azure master
-
-List of your websites:
-
-    azure site list
-
-And your app should be up on Azure.
